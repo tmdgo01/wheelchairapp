@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetDestinationActivity">
+
+    <!-- 외과 진료실1 버튼 -->
+    <Button
+        android:id="@+id/surgeryRoom1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="외과 진료실1"
+        android:layout_centerInParent="true"/>
+
+    <!-- 외과 진료실2 버튼 -->
+    <Button
+        android:id="@+id/surgeryRoom2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="외과 진료실2"
+        android:layout_below="@id/surgeryRoom1Button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 내과 진료실1 버튼 -->
+    <Button
+        android:id="@+id/internalMedicineRoom1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내과 진료실1"
+        android:layout_below="@id/surgeryRoom2Button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- CT 촬영실 버튼 -->
+    <Button
+        android:id="@+id/ctRoomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CT 촬영실"
+        android:layout_below="@id/internalMedicineRoom1Button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 목적지 이동 취소 버튼 -->
+    <Button
+        android:id="@+id/cancelDestinationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목적지 이동 취소"
+        android:layout_below="@id/ctRoomButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCancelDestinationButtonClick"/>
+
+</RelativeLayout>

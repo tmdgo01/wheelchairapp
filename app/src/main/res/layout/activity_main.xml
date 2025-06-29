@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 버튼 추가 -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서버 연결 확인"
+        android:layout_centerInParent="true"/>
+
+    <!-- 목적지 설정 버튼 -->
+    <Button
+        android:id="@+id/setDestinationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목적지 설정"
+        android:layout_below="@id/sendButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 안내원 따라가기 모드 변경 버튼 -->
+    <Button
+        android:id="@+id/changeModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추적 모드"
+        android:layout_below="@id/setDestinationButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
